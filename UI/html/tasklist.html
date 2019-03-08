@@ -1,0 +1,80 @@
+<html lang="en">
+    <head>
+        <title>Tasklist</title>
+        <meta charset="utf-8">
+        <link href="../assets/css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="../vendor/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../vendor/css/toastr.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-5">
+                <h2 class="main-title">TASK LIST</h2>
+            </div>
+            <div class="col-5">
+                <!-- criar botao deslogar -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 table-col">
+                <div class="d-title">
+                    TO DO
+                </div>
+                <div class="cards-area" id="todo-area">
+                </div>
+            </div>
+            <div class="col-4 table-col">
+                <div class="d-title">
+                    DOING
+                </div>
+                <div class="cards-area" id="doing-area"></div>
+            </div>
+            <div class="col-4 table-col">
+                 <div class="d-title">
+                    DONE
+                </div>
+                <div class="cards-area" id="done-area"></div>
+            </div>
+        </div>
+        <button class="btn btn-success btn-add" title="novo atendimento" data-toggle="modal" data-target="#taskModal"><i class='fa fa-plus' style='font-size:24px'></i></button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="taskModal" tabindex="-1" role="dialog" aria-labelledby="taskModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group row">
+                        <label for="title" class="col-sm-3 col-form-label">Title</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="title">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="description" class="col-sm-3 col-form-label">Description</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="description" name="description" placeholder="description">
+                        </div>
+                    </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="save-button" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="../vendor/js/jquery-3.3.1.min.js"></script>
+        <script src="../vendor/js/bootstrap.min.js"></script>
+        <script src="../vendor/js/toastr.min.js"></script>
+        <script src="../assets/js/tasklist.js"></script>
+    </body>
+</html>

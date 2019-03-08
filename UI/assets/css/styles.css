@@ -1,0 +1,41 @@
+.title-box {
+	margin-left: 35%;
+	margin-top: 5%;
+}
+
+.box-right-button {
+	float: right;
+	margin-top: 5%;
+}
+
+.box-left-button {
+	float: left;
+	margin-top: 5%;
+}
+
+.main-title {
+	float: right;
+}
+
+.table-col {
+	border-left: thick solid #000;
+	border-width: 0.5px;
+}
+
+.d-title {
+	text-align: center;
+}
+
+.card-buttons {
+	float: right;
+	vertical-align: text-top;
+}
+
+.btn-move {
+	float: right;
+}
+
+.btn-add {
+	float: bottom;
+	margin-left: 95%;
+}

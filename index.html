@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <title>Tasklist</title>
+        <meta charset="utf-8">
+        <link href="UI/assets/css/styles.css" rel="stylesheet">
+        <link href="UI/vendor/css/bootstrap.min.css" rel="stylesheet">
+        <link href="UI/vendor/css/toastr.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="col-md-4 offset-4">
+
+            <div class="card" style="margin-top: 5%">
+            	<div class="card-title">
+            		<h3 class="title-box">Task List</h3>
+            	</div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label for="username" class="col-sm-3 col-form-label">Usuário</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="username" name="username" placeholder="usuario">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="col-sm-3 col-form-label">Senha</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="senha">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="bg-faded p-2 m-2 text-center">Não possui conta? 
+                        	<a href="UI/html/createaccount.html">Cadastre-se</a>
+                        </div>
+                    </div>
+                       <button class="btn btn-primary box-right-button" id="login" type="submit" style="">Entrar</button>
+        		</div>
+        	</div>
+
+        </div>
+        <script src="UI/vendor/js/jquery-3.3.1.min.js"></script>
+        <script src="UI/vendor/js/bootstrap.min.js"></script>
+        <script src="UI/vendor/js/toastr.min.js"></script>
+        <script src="UI/assets/js/login.js"></script>
+    </body>
+</html>
